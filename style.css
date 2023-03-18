@@ -1,0 +1,145 @@
+@import url(https://www.fontsquirrel.com/fonts/nunito);
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.nowrap{
+    white-space: nowrap;
+}
+
+body{
+    font: "Nunito", sans-serif;
+    min-height:100vh;
+    background-color:cadetblue;
+    background-image: radial-gradient( whitesmoke, lightblue);
+    display: flex;
+    flex-direction: column;
+    
+}
+img{
+    border-radius: 90%;
+    display: block;
+    max-width: 100%;
+    
+    
+}
+
+header {
+    background-color:lightslategrey ;
+    display:grid;
+    place-content: center;
+    grid-template-columns:100%;
+    text-align:center;
+    
+  
+    
+}
+
+nav{
+    background-color: aliceblue;
+    display: flex;
+    font-weight: bolder;
+    justify-content: space-evenly;
+    border-bottom: 2px solid black;
+    padding:0.5rem;
+    
+}
+
+nav a,
+nav a:visited{
+    text-decoration: none;
+}
+nav a:hover, nav a:focus{
+    color:hsla(0, 0%, 20%, 0.6 )
+}
+
+
+header{
+    top:0;
+}
+
+
+main{
+
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1.5rem;
+    padding:1rem;
+  
+}
+.container{
+    height: 90vh;
+}
+.card{
+    background-color:azure ;
+    scroll-margin-top: 8rem ;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding:1rem;
+
+}
+.card img{
+    border: 2px solid #333;
+    
+}
+
+p,q{
+    margin-left: 50px;
+}
+figcaption{
+    margin-left: 92px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    
+
+}
+
+
+
+@media screen  and (min-width:576px) {
+    body{
+        background-color:firebrick;
+        background-image: radial-gradient( whitesmoke,firebrick);
+    }
+    
+}
+
+
+@media screen  and (min-width:768px) {
+    body{
+        background-color:orange;
+        background-image: radial-gradient( whitesmoke,orange);
+    }
+    
+}
+
+@media screen  and (min-width:992px) {
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient( whitesmoke, rebeccapurple);
+    }
+    
+}
+
+@media screen  and (max-width:768px) {
+    main{
+        display:grid;
+        grid-template-columns:1fr ;
+
+    }
+    img{
+       display: flex;
+       justify-content: center; 
+    }
+}
+
